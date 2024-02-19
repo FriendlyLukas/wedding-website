@@ -53,16 +53,20 @@ body {
     margin: 0;
     padding: 10px;
 }
+.section__paragraph--GPSLink{
+    text-decoration: none;
+    color: blue;
+}
 .section__image{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
-    max-height: 400px;
+    max-width: 560px;
+    max-height: 390px;
     margin: auto;
 }
 
-@media (max-width:500px){
+@media (max-width:576px){
     .nav{
         flex-wrap: wrap;
         justify-content: center;
@@ -71,4 +75,43 @@ body {
         margin-bottom: -20px;
         margin-top: 20px;
     }
+    .footer__phoneNumber{
+        font-size: medium;
+    }
+    .section__image{
+        max-width: 280px;
+        max-height: 195px;
+    }
+
+    .footer{
+        align-items: center;
+    }
 }
+.footer{
+    background-color: #333;
+    display: flex;
+    margin: 0px auto;
+    align-items: flex-end;
+    flex-direction: column;
+    color: white;
+}
+.footer__header{
+    padding-top: 20px;
+    display: flex;
+    margin: 0px auto;
+}
+.footer__phoneNumber{
+    margin: 0px auto;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px;
+    padding: 5px;
+    font-size: larger;
+}
+.footer__phoneNumber--link{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+

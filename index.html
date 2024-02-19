@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding website</title>
     <link href="styles.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +20,7 @@
                 <li><a class="a" href="#1"><h3>O nas</h3></a></li>
                 <li><a class="a" href="#2"><h3>Ślub</h3></a></li>
                 <li><a class="a" href="#3"><h3>Wesele</h3></a></li>
+                <li><a class="a" href="#4"><h3>Kontakt</h3></a></li>
             </ul>
         </div>
     </nav>
@@ -36,8 +36,8 @@
     <h2 id="2">Ślub</h2>
     <section class="sections">
         <p class="section__paragraph">Ślub odbędzie się dnia 27.07.2024 o godzinie 15:00 w kościele Rzymskokatolickim pw. Narodzenia Najświętszej Maryi Panny w Myślniewie.</p>
-        <p>
-            <a target="blank" href=https://maps.app.goo.gl/BRx5247wc2Vp4kiM8>
+        <p class="section__paragraph"> Adres: Myślniew 63-507 ; 
+            <a class="section__paragraph--GPSLink" target="blank" href=https://maps.app.goo.gl/BRx5247wc2Vp4kiM8>
                 Link do lokalizacji kościoła
             </a>
         </p>    
@@ -46,10 +46,22 @@
     <h2 id="3">Wesele</h2>
     <section class="">
         <p class="section__paragraph">Wesele odbędzie się w Starej Fabryce niedaleko naszego kościoła. Autokar zabierze gości do restauracji.</p> 
-        <p class="section__paragraph"><a target="blank" href="https://maps.app.goo.gl/6deEfeTZ78ZHzyKb8">Link do lokalizacji restauracji</a></p>
+        <p class="section__paragraph"> Adres: Myślniew 73, 63-507 ; 
+            <a class="section__paragraph--GPSLink" target="blank" href="https://maps.app.goo.gl/6deEfeTZ78ZHzyKb8"> Link do lokalizacji restauracji    
+            </a>
+        </p>
         <p><img class="section__image" src="images/stara_fabryka.jpg"  alt="Stara Fabryka w Myślniewie"></p>
     </section>
     </main>
+    <footer class="footer">
+        <h2 id="4" class="footer__header">Kontakt</h2>
+        <p class="footer__phoneNumber"> Gabrysia ☏ 
+            <a class="footer__phoneNumber--link" href="tel:+48794010916"> 794 010 916</a>
+        </p>
+        <p class="footer__phoneNumber"> Łukasz ☏ 
+            <a class="footer__phoneNumber--link" href="tel:+48720806066"> 720 806 066</a>
+        </p>
+    </footer>
 </body>
 </html>
 
