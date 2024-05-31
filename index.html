@@ -10,20 +10,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="nav">
-        <header class="header">Ślubna strona internetowa</header>
-            <ul class="ul">
-                <li><a class="a" href="#1"><h3>O nas</h3></a></li>
-                <li><a class="a" href="#2"><h3>Ślub</h3></a></li>
-                <li><a class="a" href="#3"><h3>Wesele</h3></a></li>
-                <li><a class="a" href="#4"><h3>Kontakt</h3></a></li>
-            </ul>
-        </div>
+        <header class="header">Gabriela & Łukasz</header>
+            <div class="ul">
+                <ul>
+                    <li><a class="a" href="#1"><header>Opowieść o naszej miłości</header></a></li>
+                    <li><a class="a" href="#2"><header>Ślub</header></a></li>
+                    <li><a class="a" href="#3"><header>Wesele</header></a></li>
+                    <li><a class="a" href="#4"><header>Kontakt</header></a></li>
+                </ul> 
+            </div>
     </nav>
+
+    <div class="countdown">
+        <h1>Do naszego ślubu pozostało:</h1>
+        <div id="time" class="time"></div>
+    </div>
+
     <main class="container">
         <h2 id="1">O nas</h2>
     <section class="section">
@@ -55,7 +64,7 @@
     </section>
     </main>
     <footer class="footer">
-        <h2 id="4" class="footer__header">Kontakt</h2>
+        <h2 id="4" class="footer__header"></h2>
         <p class="footer__phoneNumber"> Gabrysia ☏ 
             <a class="footer__phoneNumber--link" href="tel:+48794010916"> 794 010 916</a>
         </p>
@@ -63,6 +72,30 @@
             <a class="footer__phoneNumber--link" href="tel:+48720806066"> 720 806 066</a>
         </p>
     </footer>
+    <script>
+        function updateCountdown() {
+            const weddingDate = new Date('2024-07-27T15:00:00');
+            const now = new Date();
+            const diff = weddingDate - now;
+
+            if (diff <= 0) {
+                document.getElementById('time').innerHTML = "Już czas!";
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('time').innerHTML = `
+                ${days} dni ${hours} godzin ${minutes} minut ${seconds} sekund
+            `;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
 </body>
 </html>
 
