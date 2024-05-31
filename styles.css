@@ -77,14 +77,16 @@ body {
     }
     .footer__phoneNumber{
         font-size: medium;
+        
     }
     .section__image{
         max-width: 280px;
         max-height: 195px;
     }
-
-    .footer{
-        align-items: center;
+    .footer__header{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px 
     }
 }
 .footer{
