@@ -72,6 +72,9 @@ body {
     height: 900px;
     color: white;
 }
+.header--long{
+    text-align: center;
+}
 .nav {
     background-color: #F5F5EF;
     position: sticky;
