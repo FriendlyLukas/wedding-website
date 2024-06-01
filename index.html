@@ -17,20 +17,25 @@
 
 <body>
     <header class="header">Gabriela & Łukasz</header>
-    <div class="nav">
-        <nav>
-                <div class="ul">
-                     <ul>
-                        <li><a class="a" href="#1"><header>Opowieść o naszej miłości</header></a></li>
-                        <li><a class="a" href="#2"><header>Ceremonia Zaślubin</header></a></li>
-                        <li><a class="a" href="#3"><header>Przyjęcie weselne</header></a></li>
-                        <li><a class="a" href="#4"><header>Kodeks ubioru</header></a></li>
-                        <li><a class="a" href="#5"><header>Prezenty</header></a></li>
-                        <li><a class="a" href="#6"><header>Kontakt</header></a></li>
-                    </ul> 
-                </div>
-        </nav>
-    </div>
+    <nav class="nav">
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="nav__links">
+            <ul>
+                <li><a class="a" href="#1"><header>Opowieść o naszej miłości</header></a></li>
+                <li><a class="a" href="#2"><header>Ceremonia Zaślubin</header></a></li>
+                <li><a class="a" href="#3"><header>Przyjęcie weselne</header></a></li>
+                <li><a class="a" href="#4"><header>Kodeks ubioru</header></a></li>
+                <li><a class="a" href="#5"><header>Prezenty</header></a></li>
+                <li><a class="a" href="#6"><header>Transport z Wrocławia</header></a></li>
+                <li><a class="a" href="#7"><header>Kontakt</header></a></li>
+            </ul> 
+        </div>
+    </nav>
+    
     <div class="countdown">
         <h1>Odliczanie!</h1>
         <div id="time" class="time">
@@ -44,16 +49,16 @@
     </div>
 
     <main class="container">
-        <h2 id="1">O nas</h2>
     <section class="section">
+        <h1 id="1">O nas</h1>
         <p class="section__paragraph">Cześć, jak pewnie wiecie nazywamy się Gabrysia i Łukasz. Nasza miłość rozpoczęła się dzięki matematyce, którą Łukasz kocha, a Gabrysia nienawidzi.</p>
         <p class="section__paragraph">Zaręczyliśmy 16 września 2022 roku (w urodziny Gabrysi). Podczas wyjazdu do Grecji, na wyspie Korfu. Żeby nasza opowieść nie byłą aż tak nudna, postanowiliśmy podzielić się z Wami anegdotą. Kiedy Łukasz zapytał Gabi , czy zostanie jego żoną. Jej zebrało się, na żarty. W odpowiedzi Łukasz usłuszał ,,nie wiem". Zapytacie pewnie dlaczego. Dla niej odpowiedź była oczywista i była przekonana, że Łukasz zrozumie żart.</p>
         <p  class="section__paragraph"> 28 lipca 2023 roku pobraliśmy się w Rzymie. Z tego względu, prawie okrągły rok później zdecydowaliśmy się na ślub kościelny, a tym samym połączony z pierwszą rocznicą ślubu, którą chcemy przeżyć z Wami.</p>
         <p><img class="section__image" src="images/mloda_para_przed_ambasada.png"  alt="Młoda para przed polską ambasadą w Rzymie"></p>
         
     </section>
-    <h2 id="2">Ceremonia Zaślubin</h2>
     <section class="section">
+        <h1 id="2">Ceremonia Zaślubin</h1>
         <p class="section__paragraph">Ślub odbędzie się dnia 27.07.2024 o godzinie 15:00 w kościele Rzymskokatolickim pw. Narodzenia Najświętszej Maryi Panny w Myślniewie.</p>
         <p class="section__paragraph"> Adres: Myślniew 63-507 ; 
             <a class="section__paragraph--GPSLink" target="blank" href=https://maps.app.goo.gl/BRx5247wc2Vp4kiM8>
@@ -62,9 +67,9 @@
         </p>    
         <p><img class="section__image" src="images/kosciol-myslniew.png"  alt="Kościół w Myślniewie"></p>
     </section>
-    <h2 id="3">Przyjęcie weselne</h2>
-    <h3 class="section__paragraph">Wszystkich zaproszonych na ślub zapraszamy na wesele!</h3>
     <section class="section">
+        <h1 id="3">Przyjęcie weselne</h1>
+        <h2 class="section__paragraph">Wszystkich zaproszonych na ślub zapraszamy na wesele!</h2>
         <p class="section__paragraph">Wesele odbędzie się w Starej Fabryce niedaleko naszego kościoła. Autokar zabierze gości do restauracji.</p> 
         <p class="section__paragraph"> Adres: Myślniew 73, 63-507 ; 
             <a class="section__paragraph--GPSLink" target="blank" href="https://maps.app.goo.gl/6deEfeTZ78ZHzyKb8"> Link do lokalizacji restauracji    
@@ -72,21 +77,27 @@
         </p>
         <p><img class="section__image" src="images/stara_fabryka.jpg"  alt="Stara Fabryka w Myślniewie"></p>
     </section>
-    <h2 id="4">Kodeks ubioru</h2>
-    <p><img class="section__image--icon" src="images/parka-ubioru.jpg" alt="Ikona ubrania kobiety i męższczyzny."></p>
-    <h3>Pięknie i elegacko.</h3>
     <section class="section">
-        <p class="section__paragraph">U Pań mile widziane kolorowe suknie, poza kolorem białym. Panom polecamy garnitury i marynarki. Warto zabrać ze sobą wygodne buty na zmianę, aby tańczyć do samego końca wesela</p>
+        <h1 id="4">Kodeks ubioru</h1>
+        <p><img class="section__image--icon" src="images/parka-ubioru.jpg" alt="Ikona ubrania kobiety i męższczyzny."></p>
+        <h3>Pięknie i elegacko.</h3>
+        <p class="section__paragraph">U Pań mile widziane kolorowe suknie, poza kolorem białym. Panom polecamy garnitury i marynarki. Warto zabrać ze sobą wygodne buty na zmianę, aby bawić się do białego rana</p>
     </section>
-    <h2 id="5">Prezenty</h2>
-    <p><img class="section__image--icon" src="images/Projekt bez nazwy.png" alt="Ikona prezentu."></p>
     <section class="section">
-        <p class="section__paragraph">Droga Rodzino i Przyjaciele, z ogromną radością witamy Was w tym wyjątkowym dniu. Zdecydowaliśmy, gdzie będzie poniesie nas przygoda. Będą to Włochy. Z tego powodu bardzo docenilibyśmy, gdybyście chcieli podarować nam prezent w postaci pieniężnej. </p>
+        <h1 id="5">Prezenty</h1>
+        <p><img class="section__image--icon" src="images/Projekt bez nazwy.png" alt="Ikona prezentu."></p>
+        <p class="section__paragraph">Droga Rodzino i Przyjaciele,</p>
+        <p class="section__paragraph">Zdecydowaliśmy, że nasza dalsza podróż ponownie zawiedzie nas do Włoch. To marzenie, które pragniemy zrealizować, i bylibyśmy wdzięczni za Wasze wsparcie w jego spełnieniu. Dlatego prosimy o prezenty w formie pieniężnej, które pomogą nam w realizacji tego celu.</p>
         <p class="section__paragraph">Bardzo dziękujemy!</p>
+    </section>
+    <section class="section">
+        <h1 id="6">Transport z Wrocławia</h1>
+        <p><img class="section__image" src="images/transport.png" alt="Autokar na zakecię w górach i nad morzem."></p>
+        <p class="section__paragraph">Chcielibyśmy ułatwić Wam dotarcie na nasze wesele. Z tego względu zorganizowaliśmy autokar z Wrocławia, który zawiezie Was do Myślniewa. Skontaktujemy się z Wami w najbliższym czasie, aby przekazać wszystkie dokładne informacje dotyczące godziny odjazdu i miejsca zbiórki oraz zaaktualizajemy te informacje na naszej stronie.</p>
     </section>
     </main>
     <footer class="footer">
-        <h2 id="6" class="footer__header"></h2>
+        <h1 id="7" class="footer__header">Kontakt</h1>
         <p class="footer__phoneNumber"> Gabrysia ☏ 
             <a class="footer__phoneNumber--link" href="tel:+48794010916"> 794 010 916</a>
         </p>
