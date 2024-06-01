@@ -11,26 +11,34 @@
     <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="nav">
-        <header class="header">Gabriela & Łukasz</header>
-            <div class="ul">
-                <ul>
-                    <li><a class="a" href="#1"><header>Opowieść o naszej miłości</header></a></li>
-                    <li><a class="a" href="#2"><header>Ślub</header></a></li>
-                    <li><a class="a" href="#3"><header>Wesele</header></a></li>
-                    <li><a class="a" href="#4"><header>Kontakt</header></a></li>
-                </ul> 
-            </div>
-    </nav>
-
+    <header class="header">Gabriela & Łukasz</header>
+    <div class="nav">
+        <nav>
+                <div class="ul">
+                     <ul>
+                        <li><a class="a" href="#1"><header>Opowieść o naszej miłości</header></a></li>
+                        <li><a class="a" href="#2"><header>Ceremonia Zaślubin</header></a></li>
+                        <li><a class="a" href="#3"><header>Przyjęcie weselne</header></a></li>
+                        <li><a class="a" href="#4"><header>Kontakt</header></a></li>
+                    </ul> 
+                </div>
+        </nav>
+    </div>
     <div class="countdown">
-        <h1>Do naszego ślubu pozostało:</h1>
-        <div id="time" class="time"></div>
+        <h1>Odliczanie!</h1>
+        <div id="time" class="time">
+            <ul class="countdown__blocks">
+                <li class="countdown__blocks timeBlock1" id="days"></li>
+                <li class="countdown__blocks timeBlock2" id="hours"></li>
+                <li class="countdown__blocks timeBlock3" id="minutes"></li>
+                <li class="countdown__blocks timeBlock4" id="seconds"></li>
+            </ul>
+        </div>
     </div>
 
     <main class="container">
@@ -42,7 +50,7 @@
         <p><img class="section__image" src="images/mloda_para_przed_ambasada.png"  alt="Młoda para przed polską ambasadą w Rzymie"></p>
         
     </section>
-    <h2 id="2">Ślub</h2>
+    <h2 id="2">Ceremonia Zaślubin</h2>
     <section class="sections">
         <p class="section__paragraph">Ślub odbędzie się dnia 27.07.2024 o godzinie 15:00 w kościele Rzymskokatolickim pw. Narodzenia Najświętszej Maryi Panny w Myślniewie.</p>
         <p class="section__paragraph"> Adres: Myślniew 63-507 ; 
@@ -50,9 +58,9 @@
                 Link do lokalizacji kościoła
             </a>
         </p>    
-        <p class="section__paragraph"><img class="section__image" src="images/kosciol-myslniew.png"  alt="Kościół w Myślniewie"></p>
+        <p><img class="section__image" src="images/kosciol-myslniew.png"  alt="Kościół w Myślniewie"></p>
     </section>
-    <h2 id="3">Wesele</h2>
+    <h2 id="3">Przyjęcie weselne</h2>
     <section class="">
         <p class="section__paragraph">Wszystkich zaproszonych na ślub zapraszamy na wesele. </p>
         <p class="section__paragraph">Wesele odbędzie się w Starej Fabryce niedaleko naszego kościoła. Autokar zabierze gości do restauracji.</p> 
@@ -71,31 +79,7 @@
         <p class="footer__phoneNumber"> Łukasz ☏ 
             <a class="footer__phoneNumber--link" href="tel:+48720806066"> 720 806 066</a>
         </p>
-    </footer>
-    <script>
-        function updateCountdown() {
-            const weddingDate = new Date('2024-07-27T15:00:00');
-            const now = new Date();
-            const diff = weddingDate - now;
-
-            if (diff <= 0) {
-                document.getElementById('time').innerHTML = "Już czas!";
-                return;
-            }
-
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-            document.getElementById('time').innerHTML = `
-                ${days} dni ${hours} godzin ${minutes} minut ${seconds} sekund
-            `;
-        }
-
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-    </script>
+    </footer> 
 </body>
 </html>
 
